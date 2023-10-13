@@ -69,6 +69,8 @@ public class Test {
             System.out.println(list1.contains(p4));
 
 
+        //    ArrayList<String>stringArrayList
+
 
         }
 

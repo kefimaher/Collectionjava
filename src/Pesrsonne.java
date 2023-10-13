@@ -41,4 +41,31 @@ public class Pesrsonne {
         this.nom = nom;
         this.prenom = prenom;
     }
+
+    @Override
+    public String toString() {
+        return "Pesrsonne{" +
+                "id=" + id +
+                ", age=" + age +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+
+        if (obj==this)
+            return true ;
+        if (obj==null)
+            return false ;
+        if (obj.getClass()!=this.getClass())
+            return false ;
+        Pesrsonne pe = (Pesrsonne)  obj ;
+        if (pe.id==id && pe.nom==nom && pe.getPrenom()==prenom)
+            return true  ;
+        return false ;
+
+    }
 }
