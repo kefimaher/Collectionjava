@@ -11,7 +11,7 @@ public class Test {
         System.out.println(list);
         System.out.println(list.contains("test"));
         System.out.println(list.contains(5));
-        System.out.println(list.remove(5));
+        System.out.println(list.remove(2));
         System.out.println(list.remove((a)));
         System.out.println(list.remove(("test")));
         Pesrsonne p1 = new Pesrsonne(1, 15, "KEFI", "MAHER");
