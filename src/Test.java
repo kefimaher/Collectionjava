@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 public class Test {
     public static void main (String [] args) {
         ArrayList list = new ArrayList();
@@ -27,36 +26,26 @@ public class Test {
         System.out.println(list.size());
         System.out.println(list.get(8));
         System.out.println(list.get((5)));
-
         Object v1 = list.get(0);
-
 // parcourie la liste
-
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
-
         for (Object var:list) {
             System.out.println(var);
         }
-
         for (int i = 0; i < list.size(); i++) {
-
             Object ob=list.get(i);
             if (ob instanceof Pesrsonne)
             {
                 Pesrsonne p = (Pesrsonne) ob ;
                 System.out.println("nom"+p.getNom());
             }
-
-
         }
-
         for (Object obj:list)
         {
             if (obj instanceof Pesrsonne)
             {
-
                 System.out.println(((Pesrsonne)obj).getNom());
             }
             ArrayList <Pesrsonne> list1 = new ArrayList<>();
@@ -64,17 +53,11 @@ public class Test {
             list1.add(p2);
             list1.add(p3);
             list1.add(p4);
-
-        //    System.out.println(list1.contains(p1));
-        //    System.out.println(list1.contains(p4));
-        //    System.out.println(list1.contains(p3));
-
-        //    System.out.println(list.contains(new Pesrsonne(2,17,"maher" , "xdlol")));
-
-
-           ArrayList<String> lists = new ArrayList<>();
-
-
+            System.out.println(list1.contains(p1));
+            System.out.println(list1.contains(p4));
+            System.out.println(list1.contains(p3));
+            System.out.println(list.contains(new Pesrsonne(2,17,"maher" , "xdlol")));
+            ArrayList<String> lists = new ArrayList<>();
         }
 
 
