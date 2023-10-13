@@ -65,7 +65,14 @@ public class Test {
             list1.add(p3);
             list1.add(p4);
 
+            System.out.println(list1.contains(p1));
+            System.out.println(list1.contains(p4));
+
+
+
         }
+
+
 
 
 
